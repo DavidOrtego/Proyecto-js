@@ -51,14 +51,12 @@ console.log(`este es el catalogo de libros`, catalogo)
 console.log(catalogo[1].precio)
 
 // 5. Conversión de Tipos
-let valor_original = '5.67'
-let tipo_valor_original = typeof(valor_original)
-const valor_entero = valor_original
-let tipo_valor_entero = typeof(valor_entero)
+let data = '12.50';
+let converteDataToInt = parseInt(data);
+let converteDataToFloat = parseFloat(data);
 
-let tipo_valor_deciaml = typeof(valor_decimal)
-
-
-console.log(`la valor origianl es ${valor_original} y el tipo de dato es ${tipo_valor_original}`)
-console.log(`la valor entero es ${valor_entero} y el tipo de dato es ${tipo_valor_entero}`)
-console.log(`la valor decimal es ${valor_decimal} y el tipo de dato es ${tipo_valor_decimal}`)
+console.log(`
+  ${data} ${typeof(data)}, 
+  ${converteDataToInt} ${typeof(converteDataToInt)}, 
+  ${converteDataToFloat} ${typeof(converteDataToFloat)}`
+);
